@@ -1,0 +1,111 @@
+{% load static %}
+{% static 'images' as baseURL %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Santa School</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="{%static 'styles/style.css' %}" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+</head>
+<body>
+
+<div id="page">
+  <div id="header">
+    <div id="section">
+      <div><a href="index.html'"><img src="{%static 'images/logo.gif' %}" ></a></div>
+      <span>aviationschool@gmail.com <br />
+      <br />
+      + 80771 06591</span> </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about'  %}">About Us</a></li>
+      <li><a href="{% url 'admissions' %}">Admissions</a></li>
+      <li><a href="{% url 'calendar' %}">School Calendar</a></li>
+      <li><a href="{% url 'contact' %}">Contact us</a></li>
+    </ul>
+    {% block content %}
+    <div id="tagline">
+      <div>
+        <h4>Come,Let's create the future</h4>
+        <p>Learn,Play,Grow and Lead the Future.</p>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="home">
+      <div>
+        <div id="aside">
+          <div>
+            <h1>Welcome to <span class="last">Aviation School</span></h1>
+            <a href="#"><img src="{%static 'images/model1.jpg' %}" alt="" /></a>
+            <p>The Aviation has been established to cater to the rising demand for quality education in Agra. The School has a proactive approach to education and its foundations are based on the philosophy that quality education requires consistent efforts and new directions in the area of teaching and learning.</p>
+
+            <p>It is the endeavour of the school to be student centered in its approach and provide a balanced curriculum that results in the development of the overall personality of the students and to help them in becoming thought leaders of tomorrow.</p>
+
+
+           
+          </div>
+          <ul>
+            <li>
+              <h2><a href="#">Our <span class="last">Vision</span></a></h2>
+              <p>The school has qualified faculty to help in creation of new knowledge which can be translated into classroom teaching.Classrooms are spacious, centrally air conditioned and have lighting arrangements as per international standards. We ensure our students get classrooms that are not only spacious and airy, but also subject based.</p>
+            </li>
+            <li>
+              <h2><a href="#">Our <span class="last">Mission</span></a></h2>
+              <p>The number of students in each class is restricted, so that the teachers give individual attention to each student. Aesthetically designed furniture has been provided in each classroom, keeping in mind the comfort of the child. Each classroom of Pre-School and Pre-Primary has a different colour scheme</p>
+            </li>
+          </ul>
+        </div>
+        <div id="calendar">
+          <h3>Facilites</h3>
+          <ul>
+            <li>
+              <div> <span>1<br />
+                </span>
+                <h2><a href="#">World Class Faculty</a></h2>
+              </div>
+              <p>Most of the time student spend in school is with the teachers,we make sure that we have high level of teaching standards and have highly educated teachers.</p>
+            </li>
+            <li>
+              <div> <span>2<br />
+                </span>
+                <h2><a href="#">Sporting Environment</a></h2>
+              </div>
+              <p>Sports play a very importand role in the overall development of the student, we make sure that we have atleast 45 min of playing everyday for every child.</p>
+            </li>
+            <li>
+              <div> <span>3<br />
+                </span>
+                <h2><a href="#">Extra Ciricular Activities</a></h2>
+              </div>
+              <p>Apart from study and sports we emphasis on extra ciricular activities that is essential for overall development of your child.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+  
+  <div id="footer">
+    <div>
+      <div id="connect"> <a href="#"><img src="{%static 'images/icon-facebook.gif' %}" alt="" /></a> <a href="#"><img src="{%static 'images/icon-twitter.gif' %}" alt="" /></a> <a href="#"><img src="{%static 'images/icon-youtube.gif' %}" alt="" /></a> </div>
+      <div class="section">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'admissions' %}">Admissions</a></li>
+        
+          <li><a href="{% url 'contact' %}">Career</a></li>
+          <li class="last"><a href="{% url 'contact' %}">Contact us</a></li>
+        </ul>
+        <p>Copyright &copy; <a href="#">SRD</a> - All Rights Reserved<a target="_blank" href="http://www.freewebsitetemplates.com/"></a></p>
+        <p>Contact for Website development :arpitagarwal990@gmail.com or Contact :-  80771 06591</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

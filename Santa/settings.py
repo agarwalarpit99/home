@@ -25,7 +25,7 @@ SECRET_KEY = '@^3l*ed4q*d2=*s3f!6urj%ussc)=t_9a=s67&u&2-ik6l9c+v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aviation-school.herokuapp.com']
+ALLOWED_HOSTS = ['https://aviationschool.herokuapp.com/']
 
 
 # Application definition
